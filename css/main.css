@@ -1,0 +1,51 @@
+.column {
+    float: left;
+}
+
+.row:after, .row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    /* margin: -20px 0; */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.left-aside {
+    width: 35%;
+    background: lightgrey;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.width-40 {
+    width: 40%;
+    padding: 20px;
+}
+
+.width-25 {
+    width: 25%;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 55px;
+    overflow-x: hidden;
+}
+
+body {
+    background: grey;
+    margin: 35px 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
