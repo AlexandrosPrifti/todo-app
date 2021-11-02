@@ -1,3 +1,7 @@
+button {
+    border: none;
+}
+
 .column {
     float: left;
 }
@@ -14,9 +18,21 @@
     margin-right: -20px;
 }
 
+.bg-orange {
+    background-color: #f8d57e;
+}
+
+.bg-grey {
+    background-color: #e5eaec;
+}
+
+.bg-white {
+    background-color: white;
+}
+
 .left-aside {
     width: 35%;
-    background: lightgrey;
+    background: #fafbfd;
     min-height: 100vh;
     padding: 20px;
 }
@@ -40,12 +56,63 @@
 }
 
 body {
-    background: grey;
+    background: #e5eaec;
     margin: 35px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.main-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-55 {
+    padding: 54px;
+}
+
+.oval {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.main-title-wrapper h1, .main-date {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.main-title-wrapper h1 {
+    margin: 0 0 15px;
+}
+
+.main-date {
+    color: #f8d57e;
+    margin-right: 26px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.add-todo {
+    background: #f8d57e;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-date-btn {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 10px;
 }
