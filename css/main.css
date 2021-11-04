@@ -23,7 +23,7 @@ button {
 }
 
 .bg-grey {
-    background-color: #e5eaec;
+    background-color: #fafbfd;
 }
 
 .bg-white {
@@ -34,17 +34,23 @@ button {
     width: 35%;
     background: #fafbfd;
     min-height: 100vh;
-    padding: 20px;
+    padding: 47px 47px 47px 69px;
+}
+
+.center {
+    padding: 47px;
+}
+
+.right-aside {
+    padding: 47px 69px 47px 47px;
 }
 
 .width-40 {
     width: 40%;
-    padding: 20px;
 }
 
 .width-25 {
     width: 25%;
-    padding: 20px;
 }
 
 .container {
@@ -76,6 +82,39 @@ body {
     padding: 54px;
 }
 
+.logo-title {
+    display: inline-block;
+    margin: 0 0 74px 10px;
+    font-size: 18px;
+}
+
+.section-with-button {
+    position: relative;
+}
+
+.left-title {
+    font-size: 23px;
+    font-weight: lighter;
+    margin-right: 66px;
+}
+
+.left-title-button {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background: none;
+    color: #f8d57e;
+    border: none;
+    font-weight: bolder;
+}
+
+.add-todo.logo-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+} 
+
 .oval {
     border-top-left-radius: 30px;
     border-top-right-radius: 18px;
@@ -84,15 +123,21 @@ body {
     width: 50px;
     height: 50px;
     display: inline-block;
+    line-height: 50px;
+    text-align: center;
 }
 
 .main-title-wrapper h1, .main-date {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .main-title-wrapper h1 {
-    margin: 0 0 15px;
+    margin: 0;
+}
+
+.main-title-date {
+    margin-bottom: 50px;
 }
 
 .main-date {
@@ -115,4 +160,63 @@ body {
     border-radius: 50%;
     font-weight: bold;
     margin-right: 10px;
+}
+
+.todo-block {
+    padding: 28px;  
+    margin: 0 0 20px; 
+    border-radius: 22px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.todo-block > div:nth-of-type(1) {
+    flex-basis: 34px; /* width/height  - initial value: auto */
+    overflow-x: hidden;
+    white-space: normal;
+    overflow-wrap: break-word;
+} 
+
+.todo-block > div:nth-of-type(2) {
+    flex: 1; /* width/height  - initial value: auto */
+    overflow-x: hidden;
+    white-space: normal;
+    overflow-wrap: break-word;
+    padding: 0 16px;
+} 
+.todo-block > div:nth-of-type(3) {
+    flex-basis: 60px; /* width/height  - initial value: auto */
+    overflow-x: hidden;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: right;
+} 
+
+.todo-block h3 {
+    margin: 0;
+}
+
+.todo-block-img {
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+}
+
+.todo-block.bg-white .todo-block-img {
+    background-color: #f8d57e;
+}
+
+.todo-block-img img {
+    max-width: 100%;
+}
+
+.shadow, 
+.todo-block:hover {
+    box-shadow: 20px 30px 69px -39px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 20px 30px 69px -39px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 20px 30px 69px -39px rgba(0,0,0,0.25);
 }
