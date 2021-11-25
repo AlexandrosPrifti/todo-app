@@ -84,7 +84,7 @@ body {
 
 .logo-title {
     display: inline-block;
-    margin: 0 0 74px 10px;
+    margin: 0 0 41px 10px;
     font-size: 18px;
 }
 
@@ -162,6 +162,7 @@ body {
     margin-right: 10px;
 }
 
+
 .todo-block {
     padding: 28px;  
     margin: 0 0 20px; 
@@ -219,4 +220,67 @@ body {
     box-shadow: 20px 30px 69px -39px rgba(0,0,0,0.25);
     -webkit-box-shadow: 20px 30px 69px -39px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 20px 30px 69px -39px rgba(0,0,0,0.25);
+}
+
+.flex {
+    display: flex;
+}
+
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.bold {
+    font-weight: bolder;
+}
+
+.text-orange {
+    color: #f8d57e;
+}
+
+.text-small {
+    font-size: 14px;
+}
+
+
+.text-medium {
+    font-size: 18px;
+}
+
+
+.text-large {
+    font-size: 23px;
+}
+
+
+.text-extra-large {
+    font-size: 35px;
+}
+
+
+.align-items-bottom {
+    align-items: flex-end;
+}
+
+
+.flex-column {
+    flex-direction: column;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background: lightgrey;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 25px;
+    /* position: absolute */
+}
+.modal.open {
+    display: block;
 }
