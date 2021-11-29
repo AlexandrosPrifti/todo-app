@@ -89,46 +89,6 @@
                     <button class="main-date-btn">&lt;</button>
                     <button class="main-date-btn">&gt;</button>
                 </section>    
-
-                <section class="bg-orange todo-block">
-                    <div>
-                        <span class="todo-block-img"><img src="https://cdn-icons.flaticon.com/png/512/3001/premium/3001764.png?token=exp=1636023080~hmac=a00ae20c1e0bed75a12dfdec837e3d09" alt="animals"></span>
-                    </div>
-                    <div>
-                        <h3>My first todo</h3>
-                    </div>
-                    <div>10:00 AM</div>
-                </section>
-                <section class="bg-grey todo-block">
-                    <div>
-                        <span class="todo-block-img"><img src="https://cdn-icons.flaticon.com/png/512/3001/premium/3001764.png?token=exp=1636023080~hmac=a00ae20c1e0bed75a12dfdec837e3d09" alt="animals"></span>
-                    </div>
-                    <div>
-
-                        <h3>My second todo</h3>
-
-                        <p>
-                            hgfhgf kjhgkjhg kjhg kjh kjhg kjhg jkhg kjhg kjhg gg j fg gf hgf hgf hgf hgf hgf hg
-                        </p>
-
-                        <ul>
-                            <li>
-                                mbmn mbmnb
-                            </li>
-                            <li>
-                                mbmn mbmnb
-                            </li>
-                            <li>
-                                mbmn mbmnb
-                            </li>
-                            <li>
-                                mbmn mbmnb
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div>10:00 AM</div>
-                </section>
             </main>
             <aside class="column width-25 right-aside">
                 <div class="flex space-between align-items-bottom" style="margin-bottom: 86px;">
@@ -146,7 +106,7 @@
         </div>
      </div>
      <div class="modal open" id="todo-modal">
-        <h3>Add todo <form action=""></form></h3>
+        <h3>Add todo</h3>
         <button id="close-modal-btn">Close modal</button>
         <form action="" id="add-todo-form">
             <div>
@@ -160,10 +120,15 @@
                 <textarea name="description" id="description" cols="30" rows="10"></textarea>
             </div>
             <div>
+                <label style="display: block;" for="done">Done</label>
+                <input type="checkbox" name="done">
+            </div>
+            <div>
                 <button id="add-todo" type="submit">Add</button>
             </div>
         </form>
      </div>
     <script src="./js/main.js"></script>
+    <!-- <h4>tijjjj?</h4> -->
 </body>
 </html>
